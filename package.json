@@ -1,0 +1,45 @@
+{
+  "name": "zadanie-9-2",
+  "version": "1.0.0",
+  "description": "https://michalranowicz.github.io/learning-git-4/",
+  "main": "index.js",
+  "scripts": {
+    "init-project": "npm install && npm run init:dirs && npm run init:files && npm run init:gitignore",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/michalranowicz/Zadanie_9_1/task_9_1/.gitignore -o .gitignore",
+    "test": "npm-run-all test:*",
+    "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint js/scripts.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:browser-sync": "browser-sync start --server --files css/*.css *.html",
+    "watch:sassprefixer": "node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli css/style.css",
+    "build": "npm run build:clean && npm run build:sass",
+    "build:clean": "rm -rf css/*.css",
+    "build:sass": "node-sass --output-style compact -o css sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalranowicz/learning-git-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michalranowicz/learning-git-4/issues"
+  },
+  "homepage": "https://github.com/michalranowicz/learning-git-4#readme",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "globstar": "^1.0.0",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^3.3.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.5",
+    "rimraf": "^2.6.2"
+  }
+}
