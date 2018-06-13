@@ -18,7 +18,7 @@ $(function() {
 
     function createColumn() {
       // here is the code for creating the column, which you will find below
-      var $column = $("<div>").addClass("column col-3");
+      var $column = $("<div>").addClass("column col-4");
       var $columnTitle = $("<h2>")
         .addClass("column-title")
         .text(self.name);
