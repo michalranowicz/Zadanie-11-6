@@ -1,81 +1,65 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,\a   300,\a   300italic,\a   400italic,\a   600,\a   600italic,\a   700,\a   700italic";
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,\a   400|Actor:400,\a   1000";
-/* line 13, sass/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 17, sass/style.scss */
 .col-1 {
   width: 8.33%;
 }
 
-/* line 20, sass/style.scss */
 .col-2 {
   width: 16.66%;
 }
 
-/* line 23, sass/style.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 26, sass/style.scss */
 .col-4 {
   width: 33.33%;
 }
 
-/* line 29, sass/style.scss */
 .col-5 {
   width: 41.66%;
 }
 
-/* line 32, sass/style.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 35, sass/style.scss */
 .col-7 {
   width: 58.33%;
 }
 
-/* line 38, sass/style.scss */
 .col-8 {
   width: 66.66%;
 }
 
-/* line 41, sass/style.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 44, sass/style.scss */
 .col-10 {
   width: 83.33%;
 }
 
-/* line 47, sass/style.scss */
 .col-11 {
   width: 91.66%;
 }
 
-/* line 50, sass/style.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 54, sass/style.scss */
 html {
   font-size: 20px;
 }
 
-/* line 58, sass/style.scss */
 body {
   background: linear-gradient(135deg, #ffffff 0%, #e5e5e5 100%);
 }
 
-/* line 62, sass/style.scss */
 h1,
 h2 {
   text-align: center;
@@ -86,7 +70,6 @@ h2 {
   padding: 10px;
 }
 
-/* line 72, sass/style.scss */
 h1 {
   font-size: 55px;
   margin: 50px 0;
@@ -94,13 +77,11 @@ h1 {
   text-align: center;
 }
 
-/* line 79, sass/style.scss */
 .column-container {
   display: flex;
   justify-content: center;
 }
 
-/* line 84, sass/style.scss */
 .column {
   display: inline-block;
   border-radius: 8px;
@@ -113,7 +94,6 @@ h1 {
   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
-/* line 96, sass/style.scss */
 .btn {
   margin: 0 5px;
   font-size: 20px;
@@ -122,7 +102,6 @@ h1 {
   box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
-/* line 104, sass/style.scss */
 .btn-danger {
   margin: 0 5px;
   font-size: 20px;
@@ -131,25 +110,21 @@ h1 {
   border-radius: 4%;
 }
 
-/* line 112, sass/style.scss */
 .add-col {
   margin: 30px 0;
 }
 
-/* line 116, sass/style.scss */
 .create-column {
   display: block;
   margin: 0 auto;
 }
 
-/* line 121, sass/style.scss */
 ul {
   list-style-type: none;
   padding: 0;
   margin: 25px auto;
 }
 
-/* line 127, sass/style.scss */
 li {
   background: rgba(255, 255, 255, 0.7);
   margin: 15px 15px;
@@ -159,13 +134,11 @@ li {
   border-radius: 5px;
 }
 
-/* line 136, sass/style.scss */
 li .btn {
   margin-bottom: 10px;
   padding: 0px 10px;
 }
 
-/* line 141, sass/style.scss */
 .ui-sortable {
   min-height: 70%;
   overflow: hidden;
